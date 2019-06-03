@@ -110,7 +110,7 @@ Pod::Spec.new do |spec|
   spec.dependency 'Firebase/Performance'
   spec.dependency 'Firebase/Core'
   spec.dependency 'Firebase/Messaging'
-  spec.dependency 'Firebase/InAppMessagingDisplay', '~> 0.14.0'
+  spec.dependency 'Firebase/InAppMessagingDisplay'
   spec.dependency 'Firebase/Storage'
   spec.dependency 'Firebase/RemoteConfig'
   spec.dependency 'Fabric'
