@@ -87,7 +87,13 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-  # spec.frameworks = "SomeFramework", "AnotherFramework"
+
+spec.static_framework = true
+
+spec.frameworks = "FirebaseCore", "FirebaseInstanceID","FirebaseInAppMessagingDisplay","FirebaseInAppMessaging","FirebaseMessaging","FirebaseStorage", "Crashlytics", "Fabric","GoogleMobileAds"
+
+
+  #spec.frameworks = "Crashlytics", "Fabric","GoogleMobileAds"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
@@ -102,7 +108,8 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-   spec.dependency "JSONKit", "~> 1.4"
+
+
 
 
   spec.dependency "Firebase", "6.0.0"
@@ -110,12 +117,14 @@ Pod::Spec.new do |spec|
   spec.dependency 'Firebase/Performance'
   spec.dependency 'Firebase/Core'
   spec.dependency 'Firebase/Messaging'
-  spec.dependency 'Firebase/InAppMessagingDisplay'
   spec.dependency 'Firebase/Storage'
   spec.dependency 'Firebase/RemoteConfig'
-  spec.dependency 'Fabric'
-  spec.dependency 'Crashlytics'
-  spec.dependency 'Google-Mobile-Ads-SDK'
+  spec.dependency 'Firebase/FirebaseInAppMessaging','0.14.0'
+  spec.dependency 'FirebaseInAppMessagingDisplay'
+  spec.dependency 'Fabric', '~> 1.9.0'
+  spec.dependency 'Crashlytics', '~> 3.12.0'
+  spec.dependency 'Google-Mobile-Ads-SDK','~> 7.44.0'
+
 
 
 end
