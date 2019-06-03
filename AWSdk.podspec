@@ -119,11 +119,15 @@ spec.frameworks = "FirebaseCore", "FirebaseInstanceID","FirebaseInAppMessagingDi
   spec.dependency 'Firebase/Messaging'
   spec.dependency 'Firebase/Storage'
   spec.dependency 'Firebase/RemoteConfig'
-  spec.dependency 'Firebase/FirebaseInAppMessaging','0.14.0'
+  spec.dependency 'FirebaseInAppMessaging','0.14.0'
   spec.dependency 'FirebaseInAppMessagingDisplay'
-  spec.dependency 'Fabric', '~> 1.9.0'
-  spec.dependency 'Crashlytics', '~> 3.12.0'
-  spec.dependency 'Google-Mobile-Ads-SDK','~> 7.44.0'
+  spec.dependency 'Fabric'
+  spec.dependency 'Crashlytics'
+  spec.dependency 'Google-Mobile-Ads-SDK'
+
+ # spec.dependency 'Fabric', '~> 1.9.0'
+ # spec.dependency 'Crashlytics', '~> 3.12.0'
+ # spec.dependency 'Google-Mobile-Ads-SDK','~> 7.44.0'
 
 
 
