@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppleId</key>
+	<string></string>
+	<key>Banner</key>
+	<dict>
+		<key>Phone</key>
+		<array>
+			<string>ca-app-pub-3940256099942544/2934735716</string>
+		</array>
+		<key>Pad</key>
+		<array/>
+	</dict>
+	<key>Rect</key>
+	<dict>
+		<key>Phone</key>
+		<array>
+			<string>ca-app-pub-3940256099942544/2934735716</string>
+		</array>
+		<key>Pad</key>
+		<array>
+			<string></string>
+		</array>
+	</dict>
+	<key>Interstitial</key>
+	<dict>
+		<key>Phone</key>
+		<array>
+			<string>ca-app-pub-3940256099942544/4411468910</string>
+		</array>
+		<key>Pad</key>
+		<array>
+			<string></string>
+		</array>
+	</dict>
+	<key>Reward</key>
+	<dict>
+		<key>Phone</key>
+		<array>
+			<string>ca-app-pub-3940256099942544/1712485313</string>
+		</array>
+		<key>Pad</key>
+		<array>
+			<string></string>
+		</array>
+	</dict>
+	<key>DisableDebugLog</key>
+	<false/>
+</dict>
+</plist>
