@@ -104,17 +104,17 @@ Pod::Spec.new do |spec|
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
 
-  #spec.dependency "Firebase", "6.0.0"
-  #spec.dependency 'Firebase/Analytics'
-  #spec.dependency 'Firebase/Performance'
-  #spec.dependency 'Firebase/Core'
-  #spec.dependency 'Firebase/Messaging'
-  #spec.dependency 'Firebase/InAppMessagingDisplay', '0.14.0'
-  #spec.dependency 'Firebase/Storage'
-  #spec.dependency 'Firebase/RemoteConfig'
-  #spec.dependency 'Fabric'
-  #spec.dependency 'Crashlytics'
-  #spec.dependency 'Google-Mobile-Ads-SDK'
+  spec.dependency "Firebase", "6.0.0"
+  spec.dependency 'Firebase/Analytics'
+  spec.dependency 'Firebase/Performance'
+  spec.dependency 'Firebase/Core'
+  spec.dependency 'Firebase/Messaging'
+  spec.dependency 'Firebase/InAppMessagingDisplay', '0.14.0'
+  spec.dependency 'Firebase/Storage'
+  spec.dependency 'Firebase/RemoteConfig'
+  spec.dependency 'Fabric'
+  spec.dependency 'Crashlytics'
+  spec.dependency 'Google-Mobile-Ads-SDK'
 
 
 end
