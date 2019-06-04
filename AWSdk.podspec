@@ -115,7 +115,7 @@ spec.frameworks = "FirebaseCore", "FirebaseInstanceID","FirebaseInAppMessagingDi
 
 
 
-  spec.dependency 'Firebase', '6.0.0'
+  spec.dependency 'Firebase', '6.1.0'
   spec.dependency 'Firebase/Analytics'
   spec.dependency 'Firebase/Performance'
   spec.dependency 'Firebase/Core'
