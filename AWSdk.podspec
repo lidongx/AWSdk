@@ -43,7 +43,8 @@ Pod::Spec.new do |spec|
  spec.authors            = { "lidong" => "lidong@smalltreemedia.com" }
   # spec.social_media_url   = "https://twitter.com/lidong"
 
-   spec.platform     = :ios, "10.0"
+  spec.platform     = :ios, "10.0"
+  spec.ios.deployment_target = "10.0"
 
   spec.source       = { :git => "https://github.com/lidongx/AWSdk.git", :tag => "#{spec.version}" }
 
@@ -60,7 +61,11 @@ Pod::Spec.new do |spec|
   #spec.exclude_files = "Classes/Exclude"
 
 	
-  spec.source_files  = "AWSdk", "AWSdk/**/*.{h,m}"
+ # spec.source_files  = "AWSdk", "AWSdk/**/*.{h,m}"
+ #spec.source_files  = "AWSdk", "AWSdk/***/*.{h,m}"
+
+ spec.ios.vendored_frameworks = "AWSdk/AWSdk.framework"
+
   #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -90,10 +95,10 @@ Pod::Spec.new do |spec|
 
 spec.static_framework = true
 
-spec.frameworks = "FirebaseCore", "FirebaseInstanceID","FirebaseInAppMessagingDisplay","FirebaseInAppMessaging","FirebaseMessaging","FirebaseStorage", "Crashlytics", "Fabric","GoogleMobileAds"
+  spec.frameworks = "AdSupport","AudioToolbox","AVFoundation","AddressBook","CoreGraphics","CoreData","CoreLocation","CoreTelephony","CoreMotion","CoreMedia","CFNetwork","EventKit","EventKitUI","MediaPlayer","MessageUI","MobileCoreServices","PassKit","QuartzCore","Social","StoreKit","Security","SystemConfiguration","Foundation"
+  
+spec.weak_frameworks = 'Twitter',"WebKit","JavaScriptCore","WatchConnectivity"
 
-
-  #spec.frameworks = "Crashlytics", "Fabric","GoogleMobileAds"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
@@ -105,7 +110,7 @@ spec.frameworks = "FirebaseCore", "FirebaseInstanceID","FirebaseInAppMessagingDi
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # spec.requires_arc = true
+   spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 
