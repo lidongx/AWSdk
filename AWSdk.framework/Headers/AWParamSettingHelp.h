@@ -11,7 +11,7 @@
 #define AWGetInt(key) [[AWParamSettingHelp sharedInstance] getIntValueByParam:key]
 #define AWGetFloat(key) [[AWParamSettingHelp sharedInstance] getFloatValueByParam:key]
 #define AWGetDouble(key) [[AWParamSettingHelp sharedInstance] getDoubleValueByParam:key]
-#define AWGetString(key)  [[AWParamSettingHelp sharedInstance] getStringValueBgParam:key]
+#define AWGetString(key)  [[AWParamSettingHelp sharedInstance] getStringValueByParam:key]
 #define AWGetBool(key)  [[AWParamSettingHelp sharedInstance] getBoolValueByParam:key]
 
 #define AWSaveIntAsyn(key,value,bool) [[AWParamSettingHelp sharedInstance] setIntValue:value andParam:key andAsyn:true]
