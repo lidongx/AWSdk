@@ -60,10 +60,13 @@ Pod::Spec.new do |spec|
   #spec.exclude_files = "Classes/Exclude"
 
 	
-  spec.source_files  = "AWSdk", "AWSdk/**/*.{h,m}"
+  #spec.source_files  = "AWSdk", "AWSdk/**/*.{h,m}"
   #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
+
+  spec.ios.vendored_frameworks = "AWSdk.framework"
+
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
