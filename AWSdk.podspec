@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "AWSdk"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
   spec.summary      = "A short description of AWSdk."
 
 
@@ -96,7 +96,7 @@ spec.static_framework = true
 
 spec.frameworks = "AdSupport","AudioToolbox","AVFoundation","AddressBook","CoreGraphics","CoreData","CoreLocation","CoreTelephony","CoreMotion","CoreMedia","CFNetwork","EventKit","EventKitUI","MediaPlayer","MessageUI","MobileCoreServices","PassKit","QuartzCore","Social","StoreKit","Security","SystemConfiguration","Foundation"
 
- s.weak_frameworks = 'Twitter',"WebKit","JavaScriptCore","WatchConnectivity"
+spec.weak_frameworks = 'Twitter',"WebKit","JavaScriptCore","WatchConnectivity"
 
   #spec.frameworks = "Crashlytics", "Fabric","GoogleMobileAds"
 
