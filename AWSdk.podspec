@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "AWSdk"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "A short description of AWSdk."
 
 
@@ -93,7 +93,7 @@ Pod::Spec.new do |spec|
 
 spec.static_framework = true
 
-spec.frameworks = "FirebaseCore", "FirebaseInstanceID","FirebaseInAppMessagingDisplay","FirebaseInAppMessaging","FirebaseMessaging","FirebaseStorage", "Crashlytics", "Fabric","GoogleMobileAds"
+#spec.frameworks = "FirebaseCore", "FirebaseInstanceID","FirebaseInAppMessagingDisplay","FirebaseInAppMessaging","FirebaseMessaging","FirebaseStorage", "Crashlytics", "Fabric","GoogleMobileAds"
 
 
   #spec.frameworks = "Crashlytics", "Fabric","GoogleMobileAds"
