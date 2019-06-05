@@ -93,13 +93,19 @@ Pod::Spec.new do |spec|
 
 spec.static_framework = true
 
-#spec.frameworks = "FirebaseCore", "FirebaseInstanceID","FirebaseInAppMessagingDisplay","FirebaseInAppMessaging","FirebaseMessaging","FirebaseStorage", "Crashlytics", "Fabric","GoogleMobileAds"
 
+spec.frameworks = "AdSupport","AudioToolbox","AVFoundation","AddressBook","CoreGraphics","CoreData","CoreLocation","CoreTelephony","CoreMotion","CoreMedia","CFNetwork","EventKit","EventKitUI","MediaPlayer","MessageUI","MobileCoreServices","PassKit","QuartzCore","Social","StoreKit","Security","SystemConfiguration","Foundation"
+
+ s.weak_frameworks = 'Twitter',"WebKit","JavaScriptCore","WatchConnectivity"
 
   #spec.frameworks = "Crashlytics", "Fabric","GoogleMobileAds"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
+
+
+
+ spec.libraries = "z", "xml2","z.1.2.5","sqlite3","sqlite3.0","c++"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -128,9 +134,6 @@ spec.static_framework = true
   spec.dependency 'Crashlytics'
   spec.dependency 'Google-Mobile-Ads-SDK'
 
- # spec.dependency 'Fabric', '~> 1.9.0'
- # spec.dependency 'Crashlytics', '~> 3.12.0'
- # spec.dependency 'Google-Mobile-Ads-SDK','~> 7.44.0'
 
 
 
