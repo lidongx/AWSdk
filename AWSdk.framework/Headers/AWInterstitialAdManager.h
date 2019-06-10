@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-@import GoogleMobileAds;
+#import <GoogleMobileAds/GoogleMobileAds.h>
+//@import GoogleMobileAds;
 
 typedef enum{
     eInterstitialAdNormalState,
