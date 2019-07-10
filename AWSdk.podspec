@@ -134,6 +134,13 @@ spec.weak_frameworks = 'Twitter',"WebKit","JavaScriptCore","WatchConnectivity"
   spec.dependency 'Crashlytics'
   spec.dependency 'Google-Mobile-Ads-SDK'
 
+  spec.pod_target_xcconfig = {
+    'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/Firebase/Analytics',
+    'OTHER_LDFLAGS'          => '$(inherited) -undefined dynamic_lookup'
+  }
+
+
+
 
 
 
