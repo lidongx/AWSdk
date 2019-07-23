@@ -121,18 +121,18 @@ spec.weak_frameworks = 'Twitter',"WebKit","JavaScriptCore","WatchConnectivity"
 
 
 
-#spec.dependency 'Firebase', '6.1.0'
-#  spec.dependency 'Firebase/Analytics'
-#  spec.dependency 'Firebase/Performance'
-#  spec.dependency 'Firebase/Core'
-#  spec.dependency 'Firebase/Messaging'
-#  spec.dependency 'Firebase/Storage'
-#  spec.dependency 'Firebase/RemoteConfig'
-#  spec.dependency 'FirebaseInAppMessaging','0.14.0'
-#  spec.dependency 'FirebaseInAppMessagingDisplay'
-#  spec.dependency 'Fabric'
-#  spec.dependency 'Crashlytics'
-#  spec.dependency 'Google-Mobile-Ads-SDK'
+spec.dependency 'Firebase', '6.1.0'
+  spec.dependency 'Firebase/Analytics'
+  spec.dependency 'Firebase/Performance'
+  spec.dependency 'Firebase/Core'
+  spec.dependency 'Firebase/Messaging'
+  spec.dependency 'Firebase/Storage'
+  spec.dependency 'Firebase/RemoteConfig'
+  spec.dependency 'FirebaseInAppMessaging','0.14.0'
+  spec.dependency 'FirebaseInAppMessagingDisplay'
+  spec.dependency 'Fabric'
+  spec.dependency 'Crashlytics'
+  spec.dependency 'Google-Mobile-Ads-SDK'
 
 #  spec.pod_target_xcconfig = {
 #    'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/Firebase/Analytics'
