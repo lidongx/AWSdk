@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "AWSdk"
-  spec.version      = "1.0.6"
+  spec.version      = "1.0.7"
   spec.summary      = "A short description of AWSdk."
 
 
@@ -134,10 +134,10 @@ spec.weak_frameworks = 'Twitter',"WebKit","JavaScriptCore","WatchConnectivity"
   spec.dependency 'Crashlytics'
   spec.dependency 'Google-Mobile-Ads-SDK'
 
-  spec.pod_target_xcconfig = {
-    'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/Firebase/Analytics',
-    'OTHER_LDFLAGS'          => '$(inherited) -undefined dynamic_lookup'
-  }
+# spec.pod_target_xcconfig = {
+#    'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/Firebase/Analytics',
+#    'OTHER_LDFLAGS'          => '$(inherited) -undefined dynamic_lookup'
+#  }
 
 
 
