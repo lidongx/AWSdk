@@ -2,19 +2,34 @@
 #  Be sure to run `pod spec lint AWSdk.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
-#  To learn more about Podspec attributes see https://docs.cocoapods.org/specification.html
+#  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
 #  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
 
 Pod::Spec.new do |spec|
 
+  # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  These will help people to find your library, and whilst it
+  #  can feel like a chore to fill in it's definitely to your advantage. The
+  #  summary should be tweet-length, and the description more in depth.
+  #
+
   spec.name         = "AWSdk"
-  spec.version      = "1.0.7"
+  spec.version      = "2.0.0"
   spec.summary      = "A short description of AWSdk."
 
+  # This description is used to generate tags and improve search results.
+  #   * Think: What does it do? Why did you write it? What is the focus?
+  #   * Try to keep it short, snappy and to the point.
+  #   * Write the description between the DESC delimiters below.
+  #   * Finally, don't worry about the indent, CocoaPods strips it!
+  spec.description  = <<-DESC
+			It is sdk used on iOS, which implement by Objective-C.
+                   DESC
 
-  spec.homepage     = "https://github.com/lidongx/AWSdk"
-
+  spec.homepage     = "http://EXAMPLE/AWSdk"
+  # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -24,8 +39,8 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  #spec.license      = "MIT"
- spec.license      = { :type => "MIT", :file => "LICENSE" }
+  #spec.license      = "MIT (example)"
+  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -40,10 +55,30 @@ Pod::Spec.new do |spec|
 
   spec.author             = { "lidong" => "lidong@smalltreemedia.com" }
   # Or just: spec.author    = "lidong"
- spec.authors            = { "lidong" => "lidong@smalltreemedia.com" }
+  # spec.authors            = { "lidong" => "lidong@smalltreemedia.com" }
   # spec.social_media_url   = "https://twitter.com/lidong"
 
-   spec.platform     = :ios, "10.0"
+  # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  If this Pod runs only on iOS or OS X, then specify the platform and
+  #  the deployment target. You can optionally include the target after the platform.
+  #
+
+  spec.platform     = :ios
+  spec.platform     = :ios, "10.0"
+
+  #  When using multiple platforms
+  # spec.ios.deployment_target = "5.0"
+  # spec.osx.deployment_target = "10.7"
+  # spec.watchos.deployment_target = "2.0"
+  # spec.tvos.deployment_target = "9.0"
+
+
+  # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  Specify the location from where the source should be retrieved.
+  #  Supports git, hg, bzr, svn and HTTP.
+  #
 
   spec.source       = { :git => "https://github.com/lidongx/AWSdk.git", :tag => "#{spec.version}" }
 
@@ -56,17 +91,12 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  #spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  #spec.exclude_files = "Classes/Exclude"
-
-	
   #spec.source_files  = "AWSdk", "AWSdk/**/*.{h,m}"
   #spec.exclude_files = "Classes/Exclude"
 
+spec.ios.vendored_frameworks = "AWSdk.framework"
+
   # spec.public_header_files = "Classes/**/*.h"
-
-  spec.ios.vendored_frameworks = "AWSdk.framework"
-
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,23 +119,13 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #
 
-  # spec.framework  = "SomeFramework"
-
 spec.static_framework = true
 
-
-spec.frameworks = "AdSupport","AudioToolbox","AVFoundation","AddressBook","CoreGraphics","CoreData","CoreLocation","CoreTelephony","CoreMotion","CoreMedia","CFNetwork","EventKit","EventKitUI","MediaPlayer","MessageUI","MobileCoreServices","PassKit","QuartzCore","Social","StoreKit","Security","SystemConfiguration","Foundation"
-
-spec.weak_frameworks = 'Twitter',"WebKit","JavaScriptCore","WatchConnectivity"
-
-  #spec.frameworks = "Crashlytics", "Fabric","GoogleMobileAds"
+  # spec.framework  = "SomeFramework"
+   spec.frameworks = "AdSupport","AudioToolbox","AVFoundation","AddressBook","CoreGraphics","CoreData","CoreLocation","CoreTelephony","CoreMotion","CoreMedia","CFNetwork","EventKit","EventKitUI","MediaPlayer","MessageUI","MobileCoreServices","PassKit","QuartzCore","Social","StoreKit","Security","SystemConfiguration","Foundation"
 
   # spec.library   = "iconv"
-  # spec.libraries = "iconv", "xml2"
-
-
-
- spec.libraries = "z", "xml2","z.1.2.5","sqlite3","sqlite3.0","c++"
+   spec.libraries = "z", "xml2","z.1.2.5","sqlite3","sqlite3.0","c++"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -114,34 +134,21 @@ spec.weak_frameworks = 'Twitter',"WebKit","JavaScriptCore","WatchConnectivity"
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # spec.requires_arc = true
+   spec.requires_arc = true
 
-  # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+   spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 
-
-
-
-  spec.dependency 'Firebase', '6.1.0'
-  spec.dependency 'Firebase/Analytics'
-  spec.dependency 'Firebase/Performance'
-  spec.dependency 'Firebase/Core'
-  spec.dependency 'Firebase/Messaging'
-  spec.dependency 'Firebase/Storage'
-  spec.dependency 'Firebase/RemoteConfig'
-  spec.dependency 'FirebaseInAppMessaging','0.14.0'
-  spec.dependency 'FirebaseInAppMessagingDisplay'
-  spec.dependency 'Fabric'
-  spec.dependency 'Crashlytics'
-  spec.dependency 'Google-Mobile-Ads-SDK'
-
-# spec.pod_target_xcconfig = {
-#    'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/Firebase/Analytics',
-#    'OTHER_LDFLAGS'          => '$(inherited) -undefined dynamic_lookup'
-#  }
-
-
-
-
-
+   spec.dependency 'Firebase', '6.1.0'
+   spec.dependency 'Firebase/Analytics'
+   spec.dependency 'Firebase/Performance'
+   spec.dependency 'Firebase/Core'
+   spec.dependency 'Firebase/Messaging'
+   spec.dependency 'Firebase/Storage'
+   spec.dependency 'Firebase/RemoteConfig'
+   spec.dependency 'FirebaseInAppMessaging','0.14.0'
+   spec.dependency 'FirebaseInAppMessagingDisplay'
+   spec.dependency 'Fabric'
+   spec.dependency 'Crashlytics'
+   spec.dependency 'Google-Mobile-Ads-SDK'
 
 end
