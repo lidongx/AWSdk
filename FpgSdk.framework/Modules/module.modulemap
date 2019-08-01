@@ -1,0 +1,4 @@
+framework module FpgSdk {
+  header "FpgSdk-Swift.h"
+  requires objc
+}
